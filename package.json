@@ -1,0 +1,50 @@
+{
+  "name": "@cocreate/log",
+  "version": "1.0.0",
+  "description": "Client and server logging utilities for CoCreate.",
+  "keywords": [
+    "cocreate",
+    "logging",
+    "client-errors",
+    "error-reporting",
+    "server-logging"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./src/server.js",
+  "browser": "./src/client.js",
+  "exports": {
+    ".": {
+      "node": "./src/server.js",
+      "deno": "./src/server.js",
+      "browser": "./src/client.js",
+      "default": "./src/server.js"
+    },
+    "./server": "./src/server.js",
+    "./client": "./src/client.js"
+  },
+  "files": [
+    "src/",
+    "specifications/",
+    "docs/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoCreateJS/log.git"
+  },
+  "author": "CoCreate LLC",
+  "bugs": {
+    "url": "https://github.com/CoCreateJS/log/issues"
+  },
+  "homepage": "https://CoCreateJS.com/docs/log",
+  "dependencies": {
+    "@cocreate/config": "^2.0.1",
+    "@cocreate/utils": "^2.0.2"
+  }
+}
